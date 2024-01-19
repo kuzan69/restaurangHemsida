@@ -1,0 +1,147 @@
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: rgb(242, 242, 242);
+  color: black;
+  padding: 75px 150px;
+  gap: 150px;
+  .sectionOne {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 5px;
+    .sectionOne1 {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(4, auto);
+      margin-bottom: 25px;
+    }
+    .input {
+      border: 3px solid lightgrey;
+      padding: 20px;
+      border-radius: 7px;
+      font-size: 1.10rem;
+      margin: 30px 0;
+      & input:checked + label {
+        color: orangered;
+        font-weight: bold;
+      }
+    }
+    .sectionOne2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .btn1 {
+      display: none;
+    }
+  }
+
+  .paymentTitle {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(64, 64, 64);
+  }
+
+  .sectionTwo {
+    .sectionTwo1 {
+      padding: 35px;
+      border-radius: 5px 5px 0 0;
+      background-color: white;
+    }
+
+    .border {
+      height: 2px;
+      background-color: rgb(231, 231, 231);
+      margin: 30px 0;
+    }
+
+    .deliveryCosts {
+      display: grid;
+      grid-template-rows: repeat(7, auto);
+      gap: 15px;
+
+      .aCoupon {
+        text-decoration: none;
+        .coupon {
+          text-align: center;
+          color: rgba(255, 69, 0, 1);
+          &:active {
+            color: rgba(255, 69, 0, .75);
+          }
+        }
+      }
+    }
+
+    .deliveryCost {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      p {
+        font-size: 17px;
+        &:nth-child(1) {
+          font-weight: bold;
+          font-size: 1.25rem;
+        }
+        &:nth-child(2) {
+          text-align: right;
+        }
+      }
+      h1 {
+        text-align: right;
+      }
+    }
+
+    .tip {
+      margin-bottom: 25px;
+    }
+
+    .gridPercent {
+      display: grid;
+      border: 2px solid grey;
+      grid-template-columns: repeat(4, auto);
+      padding: 10px;
+      text-align: center;
+      div {
+        font-size: 1.15rem;
+        border-right: 2px solid grey;
+        &:nth-child(4) {
+          border: none;
+        }
+      }
+    }
+    .btn2 {
+      display: visible;
+    }
+  }
+  .proceedBtn {
+    @include button();
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    padding: 75px 50px 150px;
+    gap: 75px;
+    grid-template-columns: auto;
+    .sectionOne {
+      order: 2;
+      .btn1 {
+        display: block;
+      }
+    }
+    .btn2 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 75px 15px 120px;
+    gap: 55px;
+    .sectionOne .sectionOne2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

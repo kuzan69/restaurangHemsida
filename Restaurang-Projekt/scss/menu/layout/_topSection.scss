@@ -1,0 +1,103 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 40px;
+  row-gap: 70px;
+  margin: 150px 135px 115px;
+  color: white;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      object-fit: cover;
+      vertical-align: middle;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  .fullGridContent {
+    position: relative;
+    .imageDesc {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(25, 0, 0, 0.45);
+      border-radius: 10px;
+      transition-duration: .35s;
+      opacity: 0;
+      transform: scale(.95);
+      &:hover {
+        visibility: visible;
+        opacity: 100%;
+        transform: scale(1);
+      }
+      .dishDesc {
+        margin-bottom: 60px;
+        display: grid;
+        place-items: center;
+        h1 {
+          font-size: 2.75rem;
+        }
+        p {
+          color: rgb(225, 225, 225);
+          &:hover {
+            color: rgb(255, 123, 123);
+          }
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+      button {
+        appearance: none;
+        border: none;
+        width: 90%;
+        font-size: 1.25rem;
+        padding: 20px;
+        border-radius: 10px;
+        transition-duration: .25s;
+        background-color: rgba(100, 0, 0, .85);
+        color: white;
+        &:hover {
+          background-color: rgba(100, 0, 0, 1);
+          transform: scale(1.025);
+        }
+        &:active {
+          background-color: rgba(100, 0, 0, .75);
+          transform: scale(.975);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    margin: 150px 35px 115px;
+    grid-template-columns: repeat(2, auto);
+    .fullGridContent .imageDesc {
+      .dishDesc h1 {
+        font-size: 2rem;
+      }
+      button {
+        font-size: 1rem;
+        padding: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: auto;
+  }
+}

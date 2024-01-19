@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunfood</title>
+  <!-- FavIcon -->
+  <link rel="icon" type="image/x-icon" href="assets/sunIcon.png">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/contact/app.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <header>
+    <nav>
+      <div class="sunImageDiv">
+        <a href="index.html">
+          <img class="sunImage" src="assets/sun.png" alt="Sunfood logo.">
+        </a>
+      </div>
+      <ul>
+        <li class="shoppingCartLi">
+          <a href="myOrders.html">
+            <i class="shoppingCart fa-solid fa-cart-shopping"></i>
+          </a>
+        </li>
+        <li><a href="myOrders.html">My orders</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="section1">
+        <div class="msgSection">
+          <a onclick="history.back()">
+            <i class="back fa-solid fa-arrow-left-long"></i>
+          </a>
+          <h1>Send us a message</h1>
+        </div>
+        <form class="fOne">
+          <div>
+            <label for="fname">Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="Full name">
+          </div>
+          
+          <div>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Email">
+          </div>
+        </form>
+
+        <div>
+          <form class="fTwo">
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"></textarea>
+          </form>
+          <div class="policy">
+            <div>
+              <p>By submitting this form: You agree to processing of the submititted personal data in accordance with <span id="privPolicy">SunFood's Privacy Policy</span>, including the transfer of data to Sweden.
+              </p>
+            </div>
+            <div>
+              <p>By submitting this form, you agree to recieve information from Sunfood related to our service, events, and promotions. You may unsubscribe at any time by following the instructions in those communication.</p>
+            </div>
+          </div>
+        </div>
+        <form class="fThree">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+
+      <div class="section2">
+        <div class="contactInfo">
+          <div class="cInfo">
+            <div class="iDiv">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <a href="mailto: contact@sunfood.com">
+              <h2>contact@sunfood.com</h2>
+            </a>
+          </div>
+          <div class="cInfo">
+            <div class="iDiv">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <a href="https://www.instagram.com/" target="_blank">
+              <h2>Instagram</h2>
+            </a>
+          </div>
+          <div class="cInfo">
+            <div class="iDiv">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <a href="https://www.facebook.com/" target="_blank">
+              <h2>Facebook</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <div class="itemsDivide">
+        <div class="itemsDivide1">
+          <div><img class="sunImageFooter" src="assets/sun.png" alt="Sunfood logo."></div>
+  
+          <div>
+            <p class="footerTitle">Företaget</p>
+            
+            <p>Om</p>
+            <p>Jobb</p>
+          </div>
+  
+          <div>
+            <p class="footerTitle">Communities</p>
+  
+            <p>Utvecklare</p>
+            <p>Annonsering</p>
+            <p>Investerare</p>
+            <p>Försäljare</p>
+          </div>
+  
+          <div>
+            <p class="footerTitle">Användar länkar</p>
+  
+            <p>Support</p>
+            <p>Webbspelaren</p>
+            <p>Gratis mobilapp</p>
+          </div>
+        </div>
+
+        <div class="icons">
+          <!-- Link to Instagram, (no specific account) -->
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram fAwesome"></i>
+          </a>
+  
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-square-facebook fAwesome"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <div class="footerBottomP1">
+          <p>Juridisk information</p>
+          <p>integritetscenter</p>
+          <p>Integritetspolicy</p>
+          <p>Cookie-inställningar</p>
+          <p>Om annonser</p>
+          <p>Hjälpmedel</p>
+        </div>
+
+        <div class="footerBottomP2">
+          <p>Sverige</p>
+          <p>2024 Sunfood AB</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

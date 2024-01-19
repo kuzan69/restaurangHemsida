@@ -1,0 +1,13 @@
+@mixin form() {
+  label {
+    font-weight: bold;
+  }
+  input {
+    padding: 15px;
+    font-size: 1.25rem;
+    width: 100%;
+    border: none;
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+  }
+}

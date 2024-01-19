@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  // background-image: url("/assets/8.jpg");
+  background: linear-gradient(rgb(96, 0, 0), rgb(186, 0, 0));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@font-face {
+  font-family: Asian;
+  src: url(/fonts/AssassinNinja-w12j8.woff);
+}

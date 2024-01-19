@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunfood</title>
+  <!-- FavIcon -->
+  <link rel="icon" type="image/x-icon" href="assets/sunIcon.png">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/menu/app.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <header>
+    <nav>
+      <div class="sunImageDiv">
+        <a href="index.html">
+          <img class="sunImage" src="assets/sun.png" alt="Sunfood logo.">
+        </a>
+      </div>
+      <ul>
+        <!-- Shopping cart logo that appears on smaller devices -->
+        <li class="shoppingCartLi">
+          <a href="myOrders.html">
+            <i class="shoppingCart fa-solid fa-cart-shopping"></i>
+          </a>
+        </li>
+        <li><a href="myOrders.html">My orders</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="welcomeText">
+    <h1>Welcome to the home of Ramen</h1>
+    <p>Hover over the different dishes to discover our types of RAMEN!</p>
+  </div>
+
+  <!-- Main content with all the different dishes -->
+  <main>
+    <!-- One dish, content visible on hover -->
+    <div class="fullGridContent">
+      <img src="/assets/ramen1.jpg" alt="Image of food.">
+      <div class="imageDesc">
+        <div class="dishDesc">
+          <!-- Dish name -->
+          <h1>Akayu</h1>
+          <!-- Ingredient a tag that when clicked leads to the full ingredient list down bellow -->
+          <a href="#akayu"><p>Ingredients</p></a>
+        </div>
+        <!-- Add to cart button -->
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    <div class="fullGridContent">
+      <img src="/assets/ramen2.jpg" alt="Image of food.">
+      <div class="imageDesc">
+        <div class="dishDesc">
+          <h1>Asahikawa</h1>
+          <a href="#asahikawa"><p>Ingredients</p></a>
+        </div>
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    <div class="fullGridContent">
+      <img src="/assets/ramen3.jpg" alt="Image of food.">
+      <div class="imageDesc">
+        <div class="dishDesc">
+          <h1>Hiroshima</h1>
+          <a href="#hiroshima"><p>Ingredients</p></a>
+        </div>
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    <div class="fullGridContent">
+      <img src="/assets/ramen4.jpg" alt="Image of food.">
+      <div class="imageDesc">
+        <div class="dishDesc">
+          <h1>Shoyu</h1>
+          <a href="#shoyu"><p>Ingredients</p></a>
+        </div>
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    <div class="fullGridContent">
+      <img src="/assets/ramen5.jpg" alt="Image of food.">
+      <div class="imageDesc">
+        <div class="dishDesc">
+          <h1>Shio</h1>
+          <a href="#shio"><p>Ingredients</p></a>
+        </div>
+        <button>Add to cart</button>
+      </div>
+    </div>
+
+    <div class="fullGridContent">
+      <img src="/assets/ramen6.jpg" alt="Image of food.">
+      <div class="imageDesc">
+        <div class="dishDesc">
+          <h1>Miso</h1>
+          <a href="#miso"><p>Ingredients</p></a>
+        </div>
+        <button class="btn">Add to cart</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="border"></div>
+
+  <section class="ingredients">
+    <h1 class="ingTitle">Ingredients</h1>
+
+    <div class="difIngredients">
+      <div id="akayu">
+        <h2>Akayu</h2>
+        <ul>
+          <li>Soy sauce</li>
+          <li>Spicy miso</li>
+          <li>Garlic</li>
+          <li>Chicken bones</li>
+          <li>Fish</li>
+          <li>Spring onion oil</li>
+        </ul>
+      </div>
+  
+      <div id="asahikawa">
+        <h2>Asahikawa</h2>
+        <ul>
+          <li>Chicken</li>
+          <li>Wheat flour</li>
+          <li>Egg white powder</li>
+          <li>Soy sauce</li>
+          <li>Lard</li>
+          <li>Vegetable oil</li>
+          <li>Chicken extract</li>
+          <li>Seafood extract</li>
+          <li>Seasoning</li> 
+          <li>Alcohol</li>
+        </ul>
+      </div>
+  
+      <div id="hiroshima">
+        <h2>Hiroshima</h2>
+        <ul>
+          <li>Chicken bones</li>
+          <li>Vegetables</li>
+          <li>Soy sauce</li>
+          <li>Lemon salt</li>
+          <li>Super spicy tsukemen</li>
+          <li>Dandan nuddle with thick sauce</li>
+        </ul>
+      </div>
+  
+      <div id="shoyu">
+        <h2>Shoyu</h2>
+        <ul>
+          <li>Ginger</li>
+          <li>Garlic</li>
+          <li>Doubanjiang (spicy chili bean paste)</li>
+          <li>Chicken stock</li>
+          <li>Dashi (Japanese soup stock)</li>
+          <li>Soy sauce</li>
+          <li>Roasted sesame oil</li>
+          <li>Salt</li>
+          <li>White pepper powder</li>
+          <li>Fresh ramen noodles</li>
+          <li>Ramen toppings</li>
+        </ul>
+      </div>
+  
+      <div id="shio">
+        <h2>Shio</h2>
+        <ul>
+          <li>Kombu</li>
+          <li>Dried shiitake mushrooms</li>
+          <li>Dried anchovies</li>
+          <li>Dried bonito flakes</li>
+          <li>Ground chicken</li>
+          <li>Ginger</li>
+          <li>Garlic</li>
+          <li>Tokyo negi</li>
+          <li>Chicken breast</li>
+          <li>Sake</li>
+          <li>Mirin</li>
+          <li>Soy sauce</li>
+          <li>Fish sauce</li>
+          <li>Salt</li>
+          <li>Ramen Eggs</li>
+          <li>Menma (seasoned bamboo shoot)</li>
+          <li>Chopped scallions</li>
+        </ul>
+      </div>
+  
+      <div id="miso">
+        <h2>Miso</h2>
+        <ul>
+          <li>Ground chicken</li>
+          <li>Shiitake mushrooms</li>
+          <li>Ginger</li>
+          <li>Garlic</li>
+          <li>Shallots</li>
+          <li>Miso Paste</li>
+          <li>Soy Sauce</li>
+          <li>Hot Chili Oil</li>
+          <li>Vegetable broth</li>
+          <li>Dried ramen noodles</li>
+          <li>Corn</li>
+          <li>Egg</li>
+        </ul>
+      </div>
+    
+  </section>
+
+  <!-- Footer of the page -->
+  <footer>
+    <div>
+      <div class="itemsDivide">
+        <div class="itemsDivide1">
+          <div><img class="sunImageFooter" src="assets/sun.png" alt="Sunfood logo."></div>
+  
+          <div>
+            <p class="footerTitle">Företaget</p>
+            
+            <p>Om</p>
+            <p>Jobb</p>
+          </div>
+  
+          <div>
+            <p class="footerTitle">Communities</p>
+  
+            <p>Utvecklare</p>
+            <p>Annonsering</p>
+            <p>Investerare</p>
+            <p>Försäljare</p>
+          </div>
+  
+          <div>
+            <p class="footerTitle">Användar länkar</p>
+  
+            <p>Support</p>
+            <p>Webbspelaren</p>
+            <p>Gratis mobilapp</p>
+          </div>
+        </div>
+
+        <div class="icons">
+          <!-- Link to Instagram, (no specific account) -->
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram fAwesome"></i>
+          </a>
+  
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-square-facebook fAwesome"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <div class="footerBottomP1">
+          <p>Juridisk information</p>
+          <p>integritetscenter</p>
+          <p>Integritetspolicy</p>
+          <p>Cookie-inställningar</p>
+          <p>Om annonser</p>
+          <p>Hjälpmedel</p>
+        </div>
+
+        <div class="footerBottomP2">
+          <p>Sverige</p>
+          <p>2024 Sunfood AB</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

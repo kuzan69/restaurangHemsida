@@ -1,0 +1,52 @@
+.ingredients {
+  color: white;
+  margin-top: 95px;
+  margin-bottom: 125px;
+}
+
+.difIngredients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 60px;
+
+  div {
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, .15);
+    padding: 50px 90px;
+    width: 90%;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    border-bottom: 3px solid white;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    ul li {
+      color: rgb(225, 225, 225);
+    }
+  }
+}
+
+.ingTitle {
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .difIngredients {
+    grid-template-columns: auto;
+    row-gap: 0;
+    div {
+      width: 95%;
+      h2 {
+        font-size: 1.5rem;
+      }
+      ul li {
+        font-size: .85rem;
+      }
+    }
+  }
+  .ingTitle {
+    font-size: 2.5rem;
+  }
+}

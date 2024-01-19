@@ -1,0 +1,163 @@
+main {
+  background-color: #f2f2f2;
+  padding: 400px;
+  margin-top: 200px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  .section1, .section2 {
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: absolute;
+    margin: 0 150px;
+    top: -100px;
+    gap: 20px;
+    .section2 {
+      height: 245px;
+      a {
+        text-decoration: none;
+        color: rgb(144, 38, 0);
+      }
+    }
+    .msgSection {
+      margin-bottom: 50px;
+      color: #404040;
+      padding-bottom: 25px;
+      border-bottom: 2px solid rgb(202, 202, 202);
+      .back {
+        font-size: 1.5rem;
+        transition: .15s;
+        &:hover {
+          color: #40404075;
+        }
+      }
+      h1 {
+        font-weight: 600;
+        display: inline;
+        padding-left: 50px;
+      }
+    }
+    .fOne {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 25px;
+      margin-bottom: 45px;
+      @include form();
+    }
+
+    .fTwo {
+      @include form();
+      text-align: start;
+      margin-bottom: 35px;
+      #message {
+        resize: none;
+        font-family: 'Inter', sans-serif;
+        padding: 15px;
+        font-size: 1.25rem;
+        width: 50%;
+        height: 150px;
+        border: none;
+        border: 3px solid lightgrey;
+        border-radius: 5px;
+      }
+    }
+
+    .policy {
+      line-height: 1.5rem;
+      div:nth-child(1) {
+        margin-bottom: 30px;
+      }
+      #privPolicy {
+        text-decoration: underline;
+        color: red;
+        cursor: pointer;
+      }
+    }
+
+    .fThree {
+      margin: 5px 0;
+      input {
+        margin-top: 20px;
+        padding: 20px;
+        font-size: 1.25rem;
+        width: 200px;
+        background-color: rgba(255, 68, 0, 0.75);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        transition-duration: .35s;
+        &:hover {
+          background-color: rgba(255, 68, 0, 1);
+        }
+        &:active {
+          background-color: rgba(255, 68, 0, .5);
+        }
+      }
+    }
+  }
+
+  .contactInfo {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 10px;
+    .cInfo {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+      color: orangered;
+      .iDiv {
+        width: 30px;
+      }
+      i {
+        font-size: 2.5rem;
+      }
+      h2 {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    width: 100%;
+    padding: 550px 0;
+    section{
+      width: 100%;
+      grid-template-columns: auto;
+      .section1, .section2 {
+        width: 100%;
+        border-radius: 0;
+        padding: 35px;
+        height: 100%;
+      }
+      .fTwo {
+        @include form();
+        text-align: start;
+        margin-bottom: 35px;
+        #message {
+          width: 100%;
+        }
+      }
+      .fOne {
+        grid-template-columns: repeat(1, auto);
+        row-gap: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    padding: 600px 0;
+    section .fThree input {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.katana {
+  width: 100%;
+  margin: 190px 0 0;
+  img {
+    display: block;
+    margin: auto;
+    width: 1100px;
+  }
+  .border {
+    background-color: #740000;
+    width: 60%;
+    height: 8px;
+    margin: auto;
+    border-radius: 100px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .katana img {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .katana img {
+    width: 300px;
+  }
+}
